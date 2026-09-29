@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АлмазПрофиБур — Алмазное бурение и инженерные коммуникации в Москве и МО</title>
+  <meta name="description" content="Безударное алмазное сверление технологических отверстий от ⌀20 до 450 мм в бетоне, кирпиче и монолите без пыли и грязи. Выезд в день обращения.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="АлмазПрофиБур — Алмазное бурение и инженерный монтаж">
+  <meta property="og:description" content="Безударное сверление бетона без пыли и сколов. Выезд от 6 000 ₽ в день заказа.">
+  <meta property="og:image" content="https://almazprofibur.ru/logo.png">
+  <meta property="og:url" content="https://almazprofibur.ru/">
+  <meta property="og:site_name" content="АлмазПрофиБур">
+  <link rel="canonical" href="https://almazprofibur.ru/">
+
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Структурированные данные для Яндекса и Google (телефон — замените вместе с остальными) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "АлмазПрофиБур",
+  "url": "https://almazprofibur.ru/",
+  "logo": "https://almazprofibur.ru/logo.png",
+  "image": "https://almazprofibur.ru/logo.png",
+  "description": "Безударное алмазное бурение отверстий ⌀20–450 мм в бетоне, кирпиче и монолите без пыли. Москва и Московская область.",
+  "telephone": "+79990000000",
+  "priceRange": "от 6 000 ₽",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Москва",
+    "addressCountry": "RU"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Москва"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Московская область"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "22:00"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "А если бур попадет в толстую арматуру?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Алмазные коронки спроектированы специально для резки монолитного железобетона. Бур срезает металлическую арматуру любого диаметра ровно и плавно, не создавая вибраций и не откалывая куски бетона с обратной стороны стены."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Будет ли течь грязная вода по чистовым обоям или к соседям?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Исключено. Мы крепим к стене резиновые водосборные коллекторы и подключаем промышленный пылесос-шламоотсос. Вода подается минимальными дозами и на 99% сразу всасывается пылесосом. Помещение остается полностью сухим и чистым."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что требуется предоставить на объекте для проведения работ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Всего две вещи: доступ к стандартной бытовой розетке 220В и источнику холодной воды (кран, санузел). Если воды или электричества на объекте еще нет, предупредите нас заранее — мы привезем автономный генератор и напорный бак с водой."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как вы крепите станину, если на полу дорогая плитка?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Для чистовых полов мы используем вакуумные плиты (насос создает вакуум и прижимает станину к плитке без сверления пола) либо враспор между полом и потолком с помощью телескопической распорной стойки."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Tailwind CSS CDN (для продакшена соберите styles.css — см. README) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#1D4ED8',      /* Глубокий кобальт / инженерный синий */
+              primaryHover: '#1E40AF',
+              primaryLight: '#EFF6FF',
+              dark: '#0F172A',          /* Глубокий графит для текста и контраста */
+              bgLight: '#F8FAFC',
+              card: '#FFFFFF',
+              border: '#E2E8F0',
+              borderDark: '#CBD5E1',
+              muted: '#64748B'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Шрифт Inter грузится с вашего сервера (папка fonts/), а не с Google — так IP посетителей не уходят за рубеж (152-ФЗ).
+       Если файла нет, сайт покажет системный шрифт — ничего не сломается. -->
+  <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="https://unpkg.com/lucide@0.344.0"></script>
+  
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url('fonts/InterVariable.woff2') format('woff2');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+    input[type=range]::-webkit-slider-thumb {
+      background: #1D4ED8;
+      cursor: pointer;
+    }
+    .compare-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .compare-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow: hidden;
+      width: 50%;
+    }
+    .compare-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #1D4ED8;
+      transform: translateX(-50%);
+      cursor: ew-resize;
+    }
+    /* Виджет Битрикс24: на мобильных поднимаем над нижней панелью «Позвонить / WhatsApp» */
+    @media (max-width: 1023px) {
+      .b24-widget-button-position-bottom-right,
+      .b24-widget-button-position-bottom-left { bottom: 88px !important; }
+    }
+  </style>
+</head>
+<body class="bg-brand-bgLight text-brand-dark antialiased pb-20 lg:pb-0 selection:bg-blue-100 selection:text-brand-primary">
+
+  <!-- ================= НАВИГАЦИЯ ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Логотип (название в шапке не выводим — оно длинное; для поисковиков и скринридеров оставлено в alt/aria-label) -->
+      <a href="#" class="flex items-center shrink-0" aria-label="АлмазПрофиБур — на главную">
+        <img
+          src="logo.png"
+          alt="АлмазПрофиБур"
+          class="h-12 md:h-14 w-auto max-w-[180px] object-contain"
+          onerror="this.onerror=null; this.outerHTML='<div class=\'w-12 h-12 md:w-14 md:h-14 rounded-xl bg-blue-50 border border-blue-200 text-brand-primary flex items-center justify-center font-black text-base\'>АПБ</div>';"
+        >
+      </a>
+
+      <!-- Меню -->
+      <nav class="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-semibold text-slate-600">
+        <a href="#services" class="hover:text-brand-primary transition-colors">Услуги</a>
+        <a href="#equipment" class="hover:text-brand-primary transition-colors">Оборудование</a>
+        <a href="#calculator" class="hover:text-brand-primary transition-colors">Калькулятор</a>
+        <a href="#packages" class="hover:text-brand-primary transition-colors">Пакеты</a>
+        <a href="#workflow" class="hover:text-brand-primary transition-colors">Как работаем</a>
+        <a href="#coverage" class="hover:text-brand-primary transition-colors">Зоны выезда</a>
+        <a href="#faq" class="hover:text-brand-primary transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Контакты -->
+      <div class="hidden sm:flex items-center gap-4">
+        <div class="text-right">
+          <a href="tel:+79990000000" class="text-lg font-bold text-slate-900 hover:text-brand-primary transition-colors block leading-tight">
+            +7 (999) 000-00-00
+          </a>
+          <button onclick="openLeadModal('Заказ звонка из шапки')" class="text-xs text-brand-primary hover:underline font-semibold block">
+            Заказать звонок
+          </button>
+        </div>
+        <a href="https://t.me/placeholder" target="_blank" aria-label="Написать в Telegram" class="p-2.5 rounded-xl bg-blue-50 border border-blue-100 text-brand-primary hover:bg-blue-100 transition-all shadow-xs">
+          <i data-lucide="send" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO СЕКЦИЯ ================= -->
+  <section class="relative pt-8 md:pt-12 pb-16 md:pb-20 overflow-hidden bg-white border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Левая колонка -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-blue-200 bg-blue-50 text-xs uppercase tracking-wider text-brand-primary font-bold">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-primary"></i> Москва и Подмосковье до 100 км
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-slate-900">
+            Алмазное бурение <br class="hidden sm:inline">
+            <span class="text-brand-primary">отверстий&nbsp;<span class="whitespace-nowrap">⌀20–450&nbsp;мм</span></span> <br>
+            в бетоне и кирпиче
+          </h1>
+
+          <p class="text-base sm:text-lg text-brand-muted max-w-xl leading-relaxed">
+            <strong class="text-slate-900 font-bold">АлмазПрофиБур</strong> — чистовое безударное сверление под вентиляцию, бризеры, кондиционеры, сантехнику и кабельные трассы. Без вибраций, сколов и строительного шлама.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+            <div class="border-l-2 border-brand-primary pl-3">
+              <div class="font-black text-slate-900 text-base md:text-lg">0 пыли и грязи</div>
+              <div class="text-[11px] md:text-xs text-brand-muted">Водосборные кольца и шламоотсос</div>
+            </div>
+            <div class="border-l-2 border-brand-primary pl-3">
+              <div class="font-black text-slate-900 text-base md:text-lg">До 3.5 м</div>
+              <div class="text-[11px] md:text-xs text-brand-muted">Глубина бурения с удлинителями</div>
+            </div>
+            <div class="border-l-2 border-brand-primary pl-3">
+              <div class="font-black text-slate-900 text-base md:text-lg">От 6 000 ₽</div>
+              <div class="text-[11px] md:text-xs text-brand-muted">Фиксированный минимальный выезд</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="#calculator" class="px-7 py-4 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-bold text-center transition-all flex items-center justify-center gap-2 shadow-md shadow-blue-500/20 active:scale-98">
+              <i data-lucide="calculator" class="w-5 h-5"></i> Рассчитать стоимость
+            </a>
+            <button onclick="openLeadModal('Быстрая консультация')" class="px-7 py-3.5 sm:py-4 rounded-xl bg-slate-50 border border-slate-300 text-slate-800 font-bold text-center hover:bg-slate-100 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="phone-call" class="w-5 h-5 text-brand-primary"></i> Заказать звонок инженера
+            </button>
+          </div>
+        </div>
+
+        <!-- Правая колонка: Плейсхолдер Фото 1 -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 aspect-[4/3] sm:aspect-auto sm:h-96 w-full flex flex-col items-center justify-center text-center p-6 select-none shadow-xs">
+            <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 flex items-center justify-center text-brand-primary mb-3 shadow-xs">
+              <i data-lucide="image" class="w-7 h-7"></i>
+            </div>
+            <span class="text-sm font-black uppercase text-slate-800 tracking-wider">Фото 1</span>
+            <span class="text-xs font-semibold text-brand-primary mt-1">Процесс чистового алмазного бурения</span>
+            <span class="text-[11px] text-slate-500 mt-2 px-3 py-1 bg-white rounded-md border border-slate-200">Место под фото мастера со станиной Hilti</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ГАРАНТИИ И БЕЗОПАСНОСТЬ ================= -->
+  <section class="py-12 bg-white border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-6">
+        
+        <div class="flex items-start gap-3.5 p-4 rounded-xl hover:bg-slate-50 transition-all border border-slate-100">
+          <div class="p-2.5 rounded-lg bg-blue-50 text-brand-primary shrink-0">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-900 mb-1">Защита от протечек</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Используем резиновые водосборные кольца. Стены и полы остаются сухими.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-4 rounded-xl hover:bg-slate-50 transition-all border border-slate-100">
+          <div class="p-2.5 rounded-lg bg-blue-50 text-brand-primary shrink-0">
+            <i data-lucide="scan" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-900 mb-1">Детектор проводки</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Проверяем точки сканером скрытых коммуникаций перед началом сверления.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-4 rounded-xl hover:bg-slate-50 transition-all border border-slate-100">
+          <div class="p-2.5 rounded-lg bg-blue-50 text-brand-primary shrink-0">
+            <i data-lucide="hammer" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-900 mb-1">Без микротрещин</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Безударный метод вращения коронки сохраняет прочность несущих стен.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5 p-4 rounded-xl hover:bg-slate-50 transition-all border border-slate-100">
+          <div class="p-2.5 rounded-lg bg-blue-50 text-brand-primary shrink-0">
+            <i data-lucide="badge-dollar-sign" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-900 mb-1">Фиксированная смета</h4>
+            <p class="text-xs text-brand-muted leading-relaxed">Цена согласовывается до выезда и не меняется из-за сложности реза арматуры.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= СЛАЙДЕР ДО / ПОСЛЕ ================= -->
+  <section id="comparison" class="py-16 bg-slate-100/60 border-b border-brand-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200 bg-white text-xs uppercase tracking-wider text-brand-primary font-bold mb-3 shadow-xs">
+          Стандарты чистоты
+        </div>
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Бурение по готовому ремонту</h2>
+        <p class="text-brand-muted text-sm mt-2">Потяните ползунок в центре, чтобы переключать зоны сравнения</p>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden border-2 border-slate-300 shadow-sm compare-container h-80 sm:h-[400px] bg-white" id="compareBox">
+        
+        <!-- Правая сторона (ПОСЛЕ) -->
+        <div class="absolute inset-0 bg-blue-50/40 flex flex-col items-center justify-center text-center p-6 select-none border-2 border-dashed border-blue-200">
+          <div class="w-12 h-12 rounded-xl bg-white border border-blue-200 flex items-center justify-center text-brand-primary mb-2">
+            <i data-lucide="check-circle" class="w-6 h-6"></i>
+          </div>
+          <span class="text-sm font-black text-slate-900 uppercase tracking-wider">Фото 3: После бурения</span>
+          <span class="text-xs text-slate-600 mt-1">Идеально чистое ровное отверстие без пыли и подтёков</span>
+        </div>
+
+        <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-900 uppercase shadow-xs z-30">
+          После: Чистовой срез
+        </div>
+
+        <!-- Левая сторона (ДО) -->
+        <div class="compare-overlay z-20" id="compareOverlay">
+          <div class="absolute inset-0 w-[1000px] bg-slate-100 flex flex-col items-center justify-center text-center p-6 select-none border-r-2 border-brand-primary">
+            <div class="w-12 h-12 rounded-xl bg-white border border-slate-300 flex items-center justify-center text-slate-600 mb-2">
+              <i data-lucide="pencil-ruler" class="w-6 h-6"></i>
+            </div>
+            <span class="text-sm font-black text-slate-900 uppercase tracking-wider">Фото 2: До бурения</span>
+            <span class="text-xs text-slate-600 mt-1">Точная разметка и монтаж защитного оборудования</span>
+          </div>
+          <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-900 uppercase shadow-xs z-30">
+            До: Стена до работ
+          </div>
+        </div>
+
+        <!-- Разделитель -->
+        <div class="compare-handle z-30" id="compareHandle">
+          <div class="w-8 h-8 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-lg font-black absolute top-1/2 -translate-y-1/2 -translate-x-1/2 border-2 border-white text-xs">
+            ⇄
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР ================= -->
+  <section id="calculator" class="py-16 bg-white border-b border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-10">
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Онлайн-калькулятор стоимости</h2>
+        <p class="text-brand-muted text-sm mt-2">Укажите параметры задачи для моментального предварительного расчета</p>
+      </div>
+
+      <div class="bg-brand-bgLight border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-8 shadow-sm">
+        
+        <!-- Справочник быстрых назначений -->
+        <div>
+          <label class="block text-xs uppercase tracking-wider font-extrabold text-slate-500 mb-2">Подберите диаметр по назначению</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left" id="presetGroup">
+            <button type="button" data-dia="50" class="preset-btn p-3 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 hover:border-brand-primary flex flex-col justify-between h-[68px] shadow-xs transition-all">
+              <span class="font-bold">Под кондиционер</span>
+              <span class="text-[10px] font-semibold text-brand-primary">⌀50 мм</span>
+            </button>
+            <button type="button" data-dia="112" class="preset-btn p-3 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 hover:border-brand-primary flex flex-col justify-between h-[68px] shadow-xs transition-all">
+              <span class="font-bold">Под бризер / КИВ</span>
+              <span class="text-[10px] font-semibold text-brand-primary">⌀112 мм</span>
+            </button>
+            <button type="button" data-dia="132" class="preset-btn p-3 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 hover:border-brand-primary flex flex-col justify-between h-[68px] shadow-xs transition-all">
+              <span class="font-bold">Под вентиляцию</span>
+              <span class="text-[10px] font-semibold text-brand-primary">⌀132 мм</span>
+            </button>
+            <button type="button" data-dia="162" class="preset-btn p-3 rounded-xl bg-white border border-slate-200 text-xs text-slate-700 hover:border-brand-primary flex flex-col justify-between h-[68px] shadow-xs transition-all">
+              <span class="font-bold">Канализация</span>
+              <span class="text-[10px] font-semibold text-brand-primary">⌀162 мм</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Выбор материала -->
+        <div>
+          <label class="block text-sm font-bold text-slate-800 mb-3">1. Материал основания</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="materialGroup">
+            <button type="button" data-rate="30" class="material-btn active p-3.5 rounded-xl border-2 border-brand-primary bg-blue-50 text-brand-primary text-center text-sm font-bold shadow-xs transition-all">
+              Кирпич
+            </button>
+            <button type="button" data-rate="40" class="material-btn p-3.5 rounded-xl border border-slate-300 bg-white text-slate-600 text-center text-sm font-semibold hover:border-brand-primary transition-all">
+              Бетон
+            </button>
+            <button type="button" data-rate="50" class="material-btn p-3.5 rounded-xl border border-slate-300 bg-white text-slate-600 text-center text-sm font-semibold hover:border-brand-primary transition-all">
+              Железобетон
+            </button>
+            <button type="button" data-rate="60" class="material-btn p-3.5 rounded-xl border border-slate-300 bg-white text-slate-600 text-center text-sm font-semibold hover:border-brand-primary transition-all">
+              Монолит / ФБС
+            </button>
+          </div>
+        </div>
+
+        <!-- Ползунок диаметра -->
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-sm font-bold text-slate-800">2. Диаметр отверстия (мм)</label>
+            <span id="diameterVal" class="text-brand-primary font-extrabold text-lg">110 мм</span>
+          </div>
+          <input type="range" id="diameterRange" min="20" max="450" step="1" value="110" class="w-full h-2.5 bg-slate-300 rounded-lg appearance-none cursor-pointer">
+          <div class="flex justify-between text-[11px] text-brand-muted mt-1.5 font-medium">
+            <span>⌀20 (кабель)</span>
+            <span>⌀110 (вентиляция/КИВ)</span>
+            <span>⌀160 (канализация)</span>
+            <span>⌀450 (коллекторы)</span>
+          </div>
+          <p id="bigDiaNote" class="hidden mt-2 text-[11px] text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+            Для отверстий больше ⌀350 мм цена ориентировочная — инженер уточнит её по фото или при звонке.
+          </p>
+        </div>
+
+        <!-- Ползунок толщины стены -->
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-sm font-bold text-slate-800">3. Толщина стены / перекрытия (см)</label>
+            <span id="depthVal" class="text-brand-primary font-extrabold text-lg">30 см</span>
+          </div>
+          <input type="range" id="depthRange" min="10" max="150" step="5" value="30" class="w-full h-2.5 bg-slate-300 rounded-lg appearance-none cursor-pointer">
+          <div class="flex justify-between text-[11px] text-brand-muted mt-1.5 font-medium">
+            <span>10 см (перегородка)</span>
+            <span>50 см (фасадная стена)</span>
+            <span>100+ см (цоколь/фундамент)</span>
+          </div>
+        </div>
+
+        <!-- Количество отверстий -->
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-sm font-bold text-slate-800">4. Количество отверстий</label>
+            <div class="flex items-center gap-3">
+              <button type="button" id="btnMinus" aria-label="Уменьшить" class="w-9 h-9 rounded-lg bg-white border border-slate-300 flex items-center justify-center text-lg hover:border-brand-primary font-bold shadow-xs">-</button>
+              <span id="holesCount" class="font-extrabold text-lg min-w-[28px] text-center text-slate-900">1</span>
+              <button type="button" id="btnPlus" aria-label="Увеличить" class="w-9 h-9 rounded-lg bg-white border border-slate-300 flex items-center justify-center text-lg hover:border-brand-primary font-bold shadow-xs">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Итоговая строка -->
+        <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <span class="text-xs text-brand-muted uppercase tracking-wider block font-semibold">Ориентировочная смета:</span>
+            <div class="text-3xl sm:text-4xl font-black text-slate-900" id="totalPriceDisplay">6 000 ₽</div>
+            <span class="text-[11px] text-brand-muted block mt-0.5">*Минимальный выезд по Москве и области — от 6 000 ₽</span>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
+            <button id="sendCalcBtn" class="px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold transition-all flex items-center justify-center gap-2 shadow-sm active:scale-98 text-sm">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> В WhatsApp
+            </button>
+            <button onclick="openLeadModal('Калькулятор на сайте')" class="px-5 py-3.5 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-bold transition-all flex items-center justify-center gap-2 text-sm shadow-sm shadow-blue-500/20">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Оставить заявку
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ОБОРУДОВАНИЕ ================= -->
+  <section id="equipment" class="py-16 bg-brand-bgLight border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200 bg-white text-xs uppercase tracking-wider text-brand-primary font-bold mb-3 shadow-xs">
+          Профессиональный парк
+        </div>
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Инструмент и технологии</h2>
+        <p class="text-brand-muted text-sm mt-2">Работаем сертифицированным оборудованием европейских брендов без пыли и грязи</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-brand-primary font-black">
+              HILTI
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Установки бурения Hilti & Husqvarna</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Высокоточные станины с плавной подачей коронки. Автоматическая защита от заклинивания исключает рывки и трещины в монолитном бетоне.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold">
+            Точность позиционирования: ±1 мм
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-brand-primary">
+              <i data-lucide="filter" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Шламоотсосы с фильтрацией класса M</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Промышленные пылесосы Starmix/Hilti мгновенно удаляют строительный шлам и воду прямо из рабочей зоны. На пол и обои не попадает ни капли.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold">
+            Удержание пыли и шлама: 99.9%
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-brand-primary">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Сегментные коронки с лазерной пайкой</h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Алмазные сегменты европейского производства легко проходят сквозь арматурную сетку до 32 мм без вибраций и выкрашивания монолита.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold">
+            Рез металла любого сечения
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ПОД КАКИЕ ЗАДАЧИ ================= -->
+  <section id="services" class="py-20 bg-white border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Решаем любые инженерные задачи</h2>
+        <p class="text-brand-muted text-sm mt-2">Выполняем технологические отверстия с идеальной геометрией кромки</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 4</span>
+              <span class="text-[11px] text-slate-500 mt-1">Отверстие под бризер/КИВ</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="wind" class="text-brand-primary w-4 h-4"></i> Вентиляция и КИВ-клапаны
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Чистовое бурение фасадных стен под бризеры Tion, Ballu, рекуператоры и приточные клапаны без пыли по готовым обоям и краске.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Диаметры: ⌀100 – 160 мм
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 5</span>
+              <span class="text-[11px] text-slate-500 mt-1">Проходка плит перекрытия</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="droplet" class="text-brand-primary w-4 h-4"></i> Отопление и канализация
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Проход плит перекрытий и монолитных ригелей под трубы отопления, трапы и канализационные стояки с уклоном.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Диаметры: ⌀50 – 250 мм
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 6</span>
+              <span class="text-[11px] text-slate-500 mt-1">Пакет гильз под кабель</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="zap" class="text-brand-primary w-4 h-4"></i> Электрика и слаботочка
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Пакетное бурение технологических ниш и сквозных гильз для ввода силовых кабелей, шинопроводов и оптоволокна.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Диаметры: ⌀20 – 100 мм
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 7</span>
+              <span class="text-[11px] text-slate-500 mt-1">Продух в монолитном цоколе</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="box" class="text-brand-primary w-4 h-4"></i> Продухи в цоколе и ФБС
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Вентиляция подвальных помещений и цокольных этажей частных домов и промышленных зданий любой толщины.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Толщина стен: до 200 см
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 8</span>
+              <span class="text-[11px] text-slate-500 mt-1">Бурение под углом под дымоход</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="flame" class="text-brand-primary w-4 h-4"></i> Дымоходы и газовые котлы
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Сверление с заданным градусом уклона для коаксиальных дымоходов, сэндвич-труб и каминных вытяжек.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Угол наклона: до 45°
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
+          <div>
+            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
+              <span class="text-xs font-black uppercase text-slate-800">Фото 9</span>
+              <span class="text-[11px] text-slate-500 mt-1">Строчечное бурение проема</span>
+            </div>
+            <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
+              <i data-lucide="scan-line" class="text-brand-primary w-4 h-4"></i> Проемы строчечным бурением
+            </h3>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Вырезка технологических окон, дверных проемов и демонтаж массивных железобетонных конструкций серией смежных отверстий.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-brand-primary font-bold uppercase">
+            Глубина реза: без ограничений
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ПОШАГОВЫЙ РАБОЧИЙ ПРОЦЕСС ================= -->
+  <section id="workflow" class="py-20 bg-brand-bgLight border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200 bg-white text-xs uppercase tracking-wider text-brand-primary font-bold mb-3">
+          Всё просто и понятно
+        </div>
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Как устроен рабочий процесс</h2>
+        <p class="text-brand-muted text-sm mt-2">Каждый этап выверен для вашего максимального удобства и отсутствия грязи на объекте</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="relative space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 text-brand-primary flex items-center justify-center font-black text-2xl shadow-xs">
+            01
+          </div>
+          <h4 class="font-bold text-lg text-slate-900">Звонок или WhatsApp</h4>
+          <p class="text-xs text-brand-muted leading-relaxed">
+            Вы отправляете нам параметры задачи или фото. Наш инженер рассчитывает окончательную цену, которая фиксируется в смете и больше не растёт.
+          </p>
+          <div class="hidden lg:block absolute top-7 right-[-40px] w-20 border-t-2 border-dashed border-slate-200 z-10"></div>
+        </div>
+
+        <div class="relative space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 text-brand-primary flex items-center justify-center font-black text-2xl shadow-xs">
+            02
+          </div>
+          <h4 class="font-bold text-lg text-slate-900">Прибытие на объект</h4>
+          <p class="text-xs text-brand-muted leading-relaxed">
+            Экипаж со всем необходимым профессиональным инструментом Hilti/Husqvarna, водосбором и пылесосом прибывает к вам в назначенное время.
+          </p>
+          <div class="hidden lg:block absolute top-7 right-[-40px] w-20 border-t-2 border-dashed border-slate-200 z-10"></div>
+        </div>
+
+        <div class="relative space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 text-brand-primary flex items-center justify-center font-black text-2xl shadow-xs">
+            03
+          </div>
+          <h4 class="font-bold text-lg text-slate-900">Чистовое бурение</h4>
+          <p class="text-xs text-brand-muted leading-relaxed">
+            Мастера защищают стены, крепят шламоотсос, сверлят с точностью до миллиметра и без вибраций. На одно отверстие уходит от 15 до 40 минут.
+          </p>
+          <div class="hidden lg:block absolute top-7 right-[-40px] w-20 border-t-2 border-dashed border-slate-200 z-10"></div>
+        </div>
+
+        <div class="relative space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 text-brand-primary flex items-center justify-center font-black text-2xl shadow-xs">
+            04
+          </div>
+          <h4 class="font-bold text-lg text-slate-900">Приёмка и оплата</h4>
+          <p class="text-xs text-brand-muted leading-relaxed">
+            Вы проверяете гладкость кромок и отсутствие грязи. Мы убираем за собой рабочее место. Вы производите оплату удобным способом.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ПАКЕТЫ ПОД КЛЮЧ ================= -->
+  <section id="packages" class="py-20 bg-white border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Популярные пакеты «Под ключ»</h2>
+        <p class="text-brand-muted text-sm mt-2">Фиксированная стоимость с включенным выездом, работой и защитой помещения</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Пакет 1 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-brand-primary transition-all shadow-xs group">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-muted">Частным клиентам</span>
+              <i data-lucide="wind" class="text-brand-primary w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Пакет «Приточный клапан»</h3>
+            <p class="text-xs text-brand-muted leading-relaxed mb-6">Бурение наружной стены под КИВ-125 или бризер в жилой квартире с обоями и ламинатом.</p>
+            
+            <div class="text-3xl font-black text-slate-900 mb-6">7 500 ₽</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> 1 отверстие ⌀110–132 мм до 60 см</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Чистовой водосбор со шламоотсосом</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Защитная пленка на стену и пол</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Выезд мастера по Москве</li>
+            </ul>
+          </div>
+          <button onclick="openLeadModal('Пакет Приточный клапан (7 500 ₽)')" class="w-full py-3 rounded-xl bg-slate-50 hover:bg-blue-50 border border-slate-200 text-center text-xs font-bold text-slate-800 hover:text-brand-primary transition-all block">
+            Заказать пакет
+          </button>
+        </div>
+
+        <!-- Пакет 2 -->
+        <div class="bg-white border-2 border-brand-primary rounded-2xl p-6 flex flex-col justify-between relative shadow-lg shadow-blue-500/10">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-primary text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-sm">
+            Хит заказов
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-primary">Ремонт / Квартира</span>
+              <i data-lucide="home" class="text-brand-primary w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Пакет «Новостройка»</h3>
+            <p class="text-xs text-brand-muted leading-relaxed mb-6">Комплекс отверстий под коммуникации санузла, кухни и приточной вентиляции.</p>
+            
+            <div class="text-3xl font-black text-slate-900 mb-6">14 900 ₽</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> До 4 отверстий ⌀50–160 мм</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Перекрытия и стены до 40 см</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Безударный проход арматуры</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Экономия 25% от поштучного прайса</li>
+            </ul>
+          </div>
+          <button onclick="openLeadModal('Пакет Новостройка (14 900 ₽)')" class="w-full py-3 rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white text-center text-xs font-bold transition-all block shadow-md shadow-blue-500/20">
+            Заказать пакет
+          </button>
+        </div>
+
+        <!-- Пакет 3 -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-brand-primary transition-all shadow-xs group">
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-muted">Срочно</span>
+              <i data-lucide="zap" class="text-brand-primary w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-slate-900">Пакет «Экспресс 2 часа»</h3>
+            <p class="text-xs text-brand-muted leading-relaxed mb-6">Срочный выезд экипажа при авариях или простоях бригады отделочников.</p>
+            
+            <div class="text-3xl font-black text-slate-900 mb-6">10 000 ₽</div>
+
+            <ul class="space-y-3 text-xs text-slate-700 mb-6 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Подача экипажа в течение 120 минут</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Включен минимальный объем работ</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Бурение в кирпиче, бетоне, монолите</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="text-brand-primary w-4 h-4"></i> Работаем без выходных до 22:00</li>
+            </ul>
+          </div>
+          <button onclick="openLeadModal('Пакет Экспресс 2 часа (10 000 ₽)')" class="w-full py-3 rounded-xl bg-slate-50 hover:bg-blue-50 border border-slate-200 text-center text-xs font-bold text-slate-800 hover:text-brand-primary transition-all block">
+            Вызвать срочно
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ЗОНА ВЫЕЗДА ================= -->
+  <section id="coverage" class="py-16 bg-brand-bgLight border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-200 bg-white text-xs uppercase tracking-wider text-brand-primary font-bold mb-3 shadow-xs">
+          География услуг
+        </div>
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Районы выезда и тарифы</h2>
+        <p class="text-brand-muted text-sm mt-2">Оперативно направляем ближайшую бригаду по Москве и городам Московской области</p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Тарифы -->
+        <div class="lg:col-span-5 flex flex-col justify-between gap-4">
+          <div class="p-5 border border-slate-200 rounded-2xl bg-white shadow-xs space-y-2">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-sm text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Зона 1: Москва (в пределах МКАД)
+              </span>
+              <span class="text-xs font-bold px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-full">0 ₽</span>
+            </div>
+            <p class="text-xs text-brand-muted leading-relaxed">Бесплатный выезд при заказе от 6 000 ₽. Подача экипажа от 40 минут во все округа (САО, ЮАО, ЗАО, СВАО и др.).</p>
+          </div>
+
+          <div class="p-5 border border-slate-200 rounded-2xl bg-white shadow-xs space-y-2">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-sm text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-primary"></span> Зона 2: До 30 км от МКАД
+              </span>
+              <span class="text-xs font-bold px-2.5 py-1 bg-blue-50 text-brand-primary rounded-full">от 500 ₽</span>
+            </div>
+            <p class="text-xs text-brand-muted leading-relaxed">Красногорск, Химки, Мытищи, Балашиха, Люберцы, Видное, Одинцово, Подольск, Домодедово.</p>
+          </div>
+
+          <div class="p-5 border border-slate-200 rounded-2xl bg-white shadow-xs space-y-2">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-sm text-slate-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Зона 3: До 100 км от МКАД
+              </span>
+              <span class="text-xs font-bold px-2.5 py-1 bg-amber-50 text-amber-700 rounded-full">45 ₽ / км</span>
+            </div>
+            <p class="text-xs text-brand-muted leading-relaxed">Дальнее Подмосковье, коттеджные и дачные поселки. Точный расчет километража в одну сторону.</p>
+          </div>
+        </div>
+
+        <!-- Схема поясов -->
+        <div class="lg:col-span-7 border border-slate-200 rounded-2xl p-6 bg-white flex flex-col justify-between shadow-xs">
+          <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-3">
+            <span class="text-xs uppercase font-extrabold tracking-wider text-slate-800">Схема поясов подачи экипажей</span>
+            <span class="text-[11px] font-semibold text-brand-primary">Зоны покрытия</span>
+          </div>
+
+          <div class="relative w-full aspect-[16/10] bg-slate-50 rounded-xl border border-slate-200 flex items-center justify-center overflow-hidden p-4">
+            <div class="absolute inset-0 opacity-40 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] bg-[size:14px_14px]"></div>
+
+            <div class="absolute w-[86%] aspect-square rounded-full border border-dashed border-amber-300 bg-amber-50/20 flex items-start justify-center pt-2">
+              <span class="text-[10px] font-bold text-amber-700 uppercase tracking-wider bg-white px-2 py-0.5 rounded border border-amber-200 shadow-xs">до 100 км от МКАД</span>
+            </div>
+
+            <div class="absolute w-[62%] aspect-square rounded-full border border-blue-200 bg-blue-50/40 flex items-start justify-center pt-2">
+              <span class="text-[10px] font-bold text-brand-primary uppercase tracking-wider bg-white px-2 py-0.5 rounded border border-blue-200 shadow-xs">до 30 км от МКАД</span>
+            </div>
+
+            <div class="absolute w-[40%] aspect-square rounded-full border-2 border-brand-primary bg-blue-50/70 flex flex-col items-center justify-center text-center p-2 shadow-xs">
+              <span class="text-xs font-black text-brand-primary uppercase">МКАД</span>
+              <span class="text-[10px] font-bold text-slate-700 mt-0.5">Москва (0 ₽)</span>
+              <div class="w-2 h-2 rounded-full bg-brand-primary mt-1"></div>
+            </div>
+
+            <div class="absolute top-4 left-6 text-[11px] font-bold text-slate-600 bg-white px-2 py-1 rounded shadow-xs border border-slate-200">Красногорск / Химки</div>
+            <div class="absolute top-4 right-6 text-[11px] font-bold text-slate-600 bg-white px-2 py-1 rounded shadow-xs border border-slate-200">Мытищи / Королёв</div>
+            <div class="absolute bottom-4 left-6 text-[11px] font-bold text-slate-600 bg-white px-2 py-1 rounded shadow-xs border border-slate-200">Одинцово / Апрелевка</div>
+            <div class="absolute bottom-4 right-6 text-[11px] font-bold text-slate-600 bg-white px-2 py-1 rounded shadow-xs border border-slate-200">Видное / Подольск</div>
+          </div>
+
+          <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-600 pt-2">
+            <span class="flex items-center gap-1.5 font-medium"><i data-lucide="clock" class="w-4 h-4 text-brand-primary"></i> Среднее время подачи по Москве: 45–60 мин</span>
+            <button onclick="openLeadModal('Уточнение зоны выезда')" class="font-bold text-brand-primary hover:underline flex items-center gap-1">
+              Уточнить по адресу <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ОЦЕНКА ПО ФОТО ================= -->
+  <section class="py-16 bg-white border-b border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-blue-50/40 border-2 border-blue-100 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-xs">
+        <div class="max-w-xl mx-auto space-y-4">
+          <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 flex items-center justify-center text-brand-primary mx-auto shadow-xs">
+            <i data-lucide="camera" class="w-7 h-7"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">Не знаете точную толщину или материал?</h2>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Сфотографируйте стену или проект и отправьте нам. Инженер определит материал, рассчитает смету и ответит за 5 минут.
+          </p>
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3.5 flex-wrap">
+            <a href="https://wa.me/79990000000?text=Здравствуйте!%20Отправляю%20фото%20стены%20для%20оценки%20алмазного%20бурения" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> Отправить фото в WhatsApp
+            </a>
+            <a href="https://t.me/placeholder" target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-98">
+              <i data-lucide="send" class="w-4 h-4"></i> Отправить в Telegram
+            </a>
+            <button onclick="openLeadModal('Оценка по фото')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-800 font-bold text-sm flex items-center justify-center gap-2 hover:bg-slate-50 transition-all shadow-xs">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-primary"></i> Заказать обратный звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ (ВОПРОС-ОТВЕТ) ================= -->
+  <section id="faq" class="py-20 bg-brand-bgLight border-b border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <h2 class="text-3xl font-black tracking-tight text-slate-900">Частые вопросы</h2>
+        <p class="text-brand-muted text-sm mt-2">Отвечаем на то, что чаще всего интересует перед вызовом мастера</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <button class="w-full p-5 text-left font-bold text-sm flex justify-between items-center text-slate-900 hover:text-brand-primary transition-colors faq-btn" aria-expanded="false">
+            <span>А если бур попадет в толстую арматуру?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div class="px-5 pb-5 text-xs text-brand-muted leading-relaxed hidden faq-content">
+            Алмазные коронки спроектированы специально для резки монолитного железобетона. Бур срезает металлическую арматуру любого диаметра ровно и плавно, не создавая вибраций и не откалывая куски бетона с обратной стороны стены.
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <button class="w-full p-5 text-left font-bold text-sm flex justify-between items-center text-slate-900 hover:text-brand-primary transition-colors faq-btn" aria-expanded="false">
+            <span>Будет ли течь грязная вода по чистовым обоям или к соседям?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div class="px-5 pb-5 text-xs text-brand-muted leading-relaxed hidden faq-content">
+            Исключено. Мы крепим к стене резиновые водосборные коллекторы и подключаем промышленный пылесос-шламоотсос. Вода подается минимальными дозами и на 99% сразу всасывается пылесосом. Помещение остается полностью сухим и чистым.
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <button class="w-full p-5 text-left font-bold text-sm flex justify-between items-center text-slate-900 hover:text-brand-primary transition-colors faq-btn" aria-expanded="false">
+            <span>Что требуется предоставить на объекте для проведения работ?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div class="px-5 pb-5 text-xs text-brand-muted leading-relaxed hidden faq-content">
+            Всего две вещи: доступ к стандартной бытовой розетке 220В и источнику холодной воды (кран, санузел). Если воды или электричества на объекте еще нет, предупредите нас заранее — мы привезем автономный генератор и напорный бак с водой.
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
+          <button class="w-full p-5 text-left font-bold text-sm flex justify-between items-center text-slate-900 hover:text-brand-primary transition-colors faq-btn" aria-expanded="false">
+            <span>Как вы крепите станину, если на полу дорогая плитка?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+          <div class="px-5 pb-5 text-xs text-brand-muted leading-relaxed hidden faq-content">
+            Для чистовых полов мы используем вакуумные плиты (насос создает вакуум и прижимает станину к плитке без сверления пола) либо враспор между полом и потолком с помощью телескопической распорной стойки.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ФУТЕР И РЕКВИЗИТЫ ================= -->
+  <footer class="py-12 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-8 items-start justify-between">
+        
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-3 md:gap-4">
+            <div class="w-11 h-11 md:w-12 md:h-12 flex items-center justify-center overflow-hidden shrink-0">
+              <img 
+                src="logo.png" 
+                alt="АлмазПрофиБур" 
+                class="w-full h-full object-contain object-left"
+                style="max-width: 140%;"
+                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-brand-primary flex items-center justify-center font-black text-xs\'>АПБ</div>';"
+              >
+            </div>
+            <div>
+              <span class="text-lg font-black tracking-tight block text-slate-900 leading-tight">АлмазПрофиБур</span>
+              <a href="https://almazprofibur.ru" class="text-xs font-semibold text-brand-primary hover:underline">almazprofibur.ru</a>
+              <p class="text-xs text-brand-muted">Алмазное бурение и инженерный монтаж в Москве и МО.</p>
+            </div>
+          </div>
+          <p class="text-xs text-brand-muted leading-relaxed max-w-sm">
+            Базирование экипажей: Москва (САО, ЮАО, ЗАО), выезд по всей Московской области в пределах 100 км от МКАД.
+          </p>
+        </div>
+
+        <div class="md:col-span-4 text-xs text-brand-muted space-y-1">
+          <div class="font-bold text-slate-800 mb-2 uppercase tracking-wider">Юридическая информация</div>
+          <p>ИП / ООО «АлмазПрофиБур» (ОГРНИП: 326770000000000)</p>
+          <p>ИНН: 770000000000 / Работаем по договору</p>
+          <p>Оплата: Наличные, картой, безналичный расчет с НДС и без НДС по ЭДО</p>
+          <p class="pt-2">
+            <button onclick="openPrivacyModal()" class="text-slate-500 hover:text-brand-primary underline">
+              Политика обработки персональных данных (152-ФЗ)
+            </button>
+          </p>
+        </div>
+
+        <div class="md:col-span-3 text-right space-y-2">
+          <a href="tel:+79990000000" class="hover:text-brand-primary transition-colors font-black text-slate-900 text-base md:text-lg block">+7 (999) 000-00-00</a>
+          <div class="flex justify-end gap-3 text-xs text-slate-600 font-semibold">
+            <a href="https://t.me/placeholder" target="_blank" class="hover:text-brand-primary transition-colors">Telegram</a>
+            <span>•</span>
+            <a href="https://wa.me/79990000000" target="_blank" class="hover:text-brand-primary transition-colors">WhatsApp</a>
+          </div>
+          <span class="text-[11px] text-emerald-600 font-bold block">Ежедневно: с 8:00 до 22:00</span>
+        </div>
+
+      </div>
+      
+      <div class="text-center text-[10px] md:text-xs text-slate-400 mt-10 border-t border-slate-100 pt-4">
+        © 2026 АлмазПрофиБур (almazprofibur.ru). Все права защищены. Информация на сайте не является публичной офертой.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= ПЛАВАЮЩАЯ МОБИЛЬНАЯ ПАНЕЛЬ ================= -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 flex gap-2 shadow-lg">
+    <a href="tel:+79990000000" class="flex-1 py-3.5 rounded-xl bg-slate-100 border border-slate-300 text-slate-900 font-bold text-xs flex items-center justify-center gap-2 active:bg-slate-200">
+      <i data-lucide="phone" class="w-4 h-4 text-slate-800"></i> Позвонить
+    </a>
+    <a href="https://wa.me/79990000000?text=Здравствуйте!%20Хочу%20узнать%20стоимость%20алмазного%20бурения" target="_blank" class="flex-1 py-3.5 rounded-xl bg-brand-primary text-white font-bold text-xs flex items-center justify-center gap-2 active:bg-brand-primaryHover shadow-md shadow-blue-500/20">
+      <i data-lucide="message-circle" class="w-4 h-4"></i> В WhatsApp
+    </a>
+  </div>
+
+  <!-- ================= COOKIE-БАННЕР ================= -->
+  <div id="cookieBanner" class="hidden fixed left-3 right-3 bottom-[84px] lg:bottom-4 lg:left-4 lg:right-auto lg:max-w-md z-[55] bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 text-xs text-slate-600" role="region" aria-label="Уведомление о cookies">
+    <p class="leading-relaxed">
+      Мы используем cookies и Яндекс Метрику, чтобы понимать, как работает сайт. Подробнее — в
+      <button type="button" onclick="openPrivacyModal()" class="underline text-brand-primary">политике обработки ПДн</button>.
+    </p>
+    <div class="flex gap-2 mt-3">
+      <button onclick="setCookieChoice(true)" class="flex-1 py-2.5 rounded-lg bg-brand-primary hover:bg-brand-primaryHover text-white font-bold">Принять</button>
+      <button onclick="setCookieChoice(false)" class="flex-1 py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold">Только необходимые</button>
+    </div>
+  </div>
+
+  <!-- ================= МОДАЛЬНОЕ ОКНО: ЗАЯВКА ================= -->
+  <div id="leadModal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200">
+      <button onclick="closeLeadModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-primary flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="phone-incoming" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-black text-slate-900">Заказать звонок инженера</h3>
+        <p class="text-xs text-slate-500 mt-1">Перезвоним в течение 5 минут для консультации и фиксации сметы</p>
+      </div>
+
+      <form id="leadForm" class="space-y-4">
+        <input type="hidden" id="formSource" value="Общая заявка">
+        <!-- ловушка для спам-ботов: люди это поле не видят -->
+        <input type="text" id="leadWebsite" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Ваше имя</label>
+          <input type="text" id="leadName" autocomplete="name" placeholder="Александр" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-primary bg-slate-50">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Номер телефона <span class="text-red-500">*</span></label>
+          <input type="tel" id="leadPhone" required inputmode="tel" autocomplete="tel" maxlength="18" placeholder="+7 (___) ___-__-__" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-brand-primary bg-slate-50">
+        </div>
+
+        <div class="p-3 bg-blue-50/60 rounded-xl border border-blue-100 text-[11px] text-slate-700" id="calcSummaryBox">
+          Параметры: <span id="summaryText" class="font-semibold text-brand-primary">Консультация</span>
+        </div>
+
+        <p id="leadError" class="hidden text-xs text-red-600 bg-red-50 border border-red-200 rounded-xl p-3" role="alert"></p>
+
+        <label class="flex items-start gap-2.5 text-[11px] text-slate-600 leading-snug cursor-pointer">
+          <input type="checkbox" id="leadConsent" class="mt-0.5 w-4 h-4 shrink-0 accent-blue-700 cursor-pointer">
+          <span>
+            Даю <button type="button" onclick="openConsentModal()" class="underline text-brand-primary">согласие на обработку персональных данных</button>
+            и подтверждаю, что ознакомлен(а) с <button type="button" onclick="openPrivacyModal()" class="underline text-brand-primary">политикой обработки ПДн</button>.
+          </span>
+        </label>
+
+        <button type="submit" id="leadSubmit" class="w-full py-3.5 disabled:opacity-60 disabled:cursor-wait rounded-xl bg-brand-primary hover:bg-brand-primaryHover text-white font-bold text-sm transition-all shadow-md shadow-blue-500/20 flex items-center justify-center gap-2">
+          <span id="leadSubmitText">Отправить заявку</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </form>
+
+      <div id="leadSuccess" class="hidden text-center py-6 space-y-2">
+        <div class="w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto">
+          <i data-lucide="check" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-base font-bold text-slate-900">Заявка успешно принята!</h4>
+        <p class="text-xs text-slate-500">Дежурный инженер свяжется с вами в течение нескольких минут.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= МОДАЛЬНОЕ ОКНО: СОГЛАСИЕ НА ОБРАБОТКУ ПДн ================= -->
+  <!-- Текст — типовой. Замените реквизиты оператора на свои и при возможности покажите юристу. -->
+  <div id="consentModal" class="fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4" role="dialog" aria-modal="true" aria-labelledby="consentTitle">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200 max-h-[85vh] flex flex-col">
+      <button onclick="closeConsentModal()" aria-label="Закрыть" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h3 id="consentTitle" class="text-lg font-black text-slate-900 mb-4 pb-2 border-b border-slate-200">Согласие на обработку персональных данных</h3>
+      <div class="overflow-y-auto space-y-3 text-xs text-slate-600 leading-relaxed pr-2">
+        <p>Я, субъект персональных данных, действуя свободно, своей волей и в своём интересе, в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» даю согласие оператору — ООО «АлмазПрофиБур» (ИНН 770000000000, адрес: г. Москва, ___), сайт almazprofibur.ru (далее — Оператор), на обработку моих персональных данных на следующих условиях.</p>
+        <p><b>Перечень данных:</b> имя; номер телефона; сведения о задаче (параметры отверстий, адрес или район объекта), указанные мной в форме или сообщении.</p>
+        <p><b>Цели обработки:</b> обратная связь по моей заявке, расчёт стоимости работ, согласование выезда, заключение и исполнение договора оказания услуг.</p>
+        <p><b>Действия с данными:</b> сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), использование, блокирование, удаление, уничтожение — с использованием средств автоматизации и без них, в том числе с хранением в CRM-системе Битрикс24.</p>
+        <p><b>Передача третьим лицам</b> не осуществляется, за исключением случаев, предусмотренных законодательством РФ.</p>
+        <p><b>Срок действия согласия:</b> до достижения целей обработки либо до момента его отзыва. Согласие может быть отозвано письменным заявлением на адрес Оператора или по электронной почте ___@almazprofibur.ru; после получения отзыва данные будут уничтожены в срок, установленный законом.</p>
+      </div>
+      <div class="pt-4 mt-4 border-t border-slate-100 text-right">
+        <button onclick="acceptConsentFromModal()" class="px-5 py-2 bg-brand-primary hover:bg-brand-primaryHover text-white rounded-lg text-xs font-bold transition-all mr-2">Согласен(на)</button>
+        <button onclick="closeConsentModal()" class="px-5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold transition-all">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= МОДАЛЬНОЕ ОКНО: 152-ФЗ ================= -->
+  <div id="privacyModal" class="fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200 max-h-[85vh] flex flex-col">
+      <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 class="text-lg font-black text-slate-900 mb-4 pb-2 border-b border-slate-200">Политика обработки персональных данных (152-ФЗ)</h3>
+
+      <div class="overflow-y-auto space-y-3 text-xs text-slate-600 leading-relaxed pr-2">
+        <p>1. Настоящая Политика регламентирует порядок сбора, обработки и защиты персональных данных пользователей сервиса АлмазПрофиБур (almazprofibur.ru) в соответствии с Федеральным законом РФ № 152-ФЗ «О персональных данных».</p>
+        <p>2. Оператор собирает данные исключительно в целях обработки входящих заявок, расчёта стоимости выезда и предоставления услуг алмазного сверления и сопутствующего инженерного монтажа.</p>
+        <p>3. Состав собираемых данных: имя пользователя, контактный номер телефона, адрес или район проведения работ.</p>
+        <p>4. Оператор обязуется не передавать полученные контактные данные третьим лицам без явного согласия пользователя, за исключением случаев, предусмотренных действующим законодательством РФ.</p>
+        <p>4.1. Заявки с сайта хранятся в CRM-системе Битрикс24, используемой Оператором для их обработки.</p>
+        <p>4.2. С согласия пользователя сайт использует cookies и сервис веб-аналитики Яндекс Метрика (ООО «Яндекс») для сбора обезличенной статистики посещений. Отказаться можно в уведомлении о cookies или в настройках браузера.</p>
+        <p>5. Направляя форму или обращаясь по каналам связи, указанным на сайте, субъект персональных данных подтверждает своё согласие на их обработку.</p>
+      </div>
+
+      <div class="pt-4 mt-4 border-t border-slate-100 text-right">
+        <button onclick="closePrivacyModal()" class="px-5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-lg text-xs font-bold transition-all">
+          Закрыть
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= JS ЛОГИКА ================= -->
+  <script>
+    lucide.createIcons();
+
+    /* ============ 1. КАЛЬКУЛЯТОР ============ */
+    let currentRatePerCm = 30;
+    let currentMaterialName = 'Кирпич';
+    const minOrderPrice = 6000;
+
+    const diameterRange = document.getElementById('diameterRange');
+    const depthRange = document.getElementById('depthRange');
+    const diameterVal = document.getElementById('diameterVal');
+    const depthVal = document.getElementById('depthVal');
+    const holesCountElem = document.getElementById('holesCount');
+    const totalPriceDisplay = document.getElementById('totalPriceDisplay');
+    const sendCalcBtn = document.getElementById('sendCalcBtn');
+
+    let holesCount = 1;
+
+    document.querySelectorAll('.material-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.material-btn').forEach(b => {
+          b.classList.remove('active', 'border-2', 'border-brand-primary', 'bg-blue-50', 'text-brand-primary', 'font-bold');
+          b.classList.add('border', 'border-slate-300', 'bg-white', 'text-slate-600', 'font-semibold');
+        });
+        btn.classList.add('active', 'border-2', 'border-brand-primary', 'bg-blue-50', 'text-brand-primary', 'font-bold');
+        btn.classList.remove('border-slate-300', 'bg-white', 'text-slate-600', 'font-semibold');
+        currentRatePerCm = parseInt(btn.dataset.rate, 10);
+        currentMaterialName = btn.innerText.trim();
+        calculate();
+      });
+    });
+
+    diameterRange.addEventListener('input', (e) => {
+      diameterVal.textContent = `${e.target.value} мм`;
+      document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('border-brand-primary', 'border-2', 'bg-blue-50'));
+      calculate();
+    });
+
+    depthRange.addEventListener('input', (e) => {
+      depthVal.textContent = `${e.target.value} см`;
+      calculate();
+    });
+
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('border-brand-primary', 'border-2', 'bg-blue-50'));
+        btn.classList.add('border-brand-primary', 'border-2', 'bg-blue-50');
+        const d = btn.dataset.dia;
+        diameterRange.value = d;
+        diameterVal.textContent = `${d} мм`;
+        calculate();
+      });
+    });
+
+    document.getElementById('btnMinus').addEventListener('click', () => {
+      if (holesCount > 1) {
+        holesCount--;
+        holesCountElem.textContent = holesCount;
+        calculate();
+      }
+    });
+
+    document.getElementById('btnPlus').addEventListener('click', () => {
+      holesCount++;
+      holesCountElem.textContent = holesCount;
+      calculate();
+    });
+
+    function calculate() {
+      const diameter = parseInt(diameterRange.value, 10);
+      const depth = parseInt(depthRange.value, 10);
+      const diameterFactor = 1 + (diameter / 200);
+      let pricePerHole = depth * currentRatePerCm * diameterFactor;
+      let total = Math.round(pricePerHole * holesCount);
+      if (total < minOrderPrice) total = minOrderPrice;
+      totalPriceDisplay.textContent = `${diameter > 350 ? 'от ' : ''}${total.toLocaleString('ru-RU')} ₽`;
+      document.getElementById('bigDiaNote').classList.toggle('hidden', diameter <= 350);
+      return total;
+    }
+
+    sendCalcBtn.addEventListener('click', () => {
+      const total = calculate();
+      const text = `Здравствуйте! Рассчитал на сайте almazprofibur.ru алмазное бурение:\n` +
+                   `• Материал: ${currentMaterialName}\n` +
+                   `• Диаметр: ${diameterRange.value} мм\n` +
+                   `• Толщина стены: ${depthRange.value} см\n` +
+                   `• Количество: ${holesCount} шт.\n` +
+                   `• Примерная сумма: ${total.toLocaleString('ru-RU')} ₽.\n` +
+                   `Подскажите, когда возможен ближайший выезд?`;
+      const whatsappUrl = `https://wa.me/79990000000?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank');
+      // Фиксируем в CRM, что клиент ушёл считать в WhatsApp (без личных данных)
+      sendMessengerLead('WhatsApp из калькулятора', total);
+      reachGoal('calc_whatsapp');
+    });
+
+    calculate();
+
+    /* ============ 2. СЛАЙДЕР ДО / ПОСЛЕ ============ */
+    const compareBox = document.getElementById('compareBox');
+    const compareOverlay = document.getElementById('compareOverlay');
+    const compareHandle = document.getElementById('compareHandle');
+    let isDragging = false;
+
+    function setSliderPosition(x) {
+      const rect = compareBox.getBoundingClientRect();
+      let pos = (x - rect.left) / rect.width;
+      if (pos < 0) pos = 0;
+      if (pos > 1) pos = 1;
+      const percentage = pos * 100;
+      compareOverlay.style.width = `${percentage}%`;
+      compareHandle.style.left = `${percentage}%`;
+    }
+
+    compareBox.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      setSliderPosition(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => isDragging = false);
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      setSliderPosition(e.clientX);
+    });
+
+    compareBox.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      setSliderPosition(e.touches[0].clientX);
+    });
+
+    window.addEventListener('touchend', () => isDragging = false);
+
+    window.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      setSliderPosition(e.touches[0].clientX);
+    });
+
+    /* ============ 3. FAQ АККОРДЕОН ============ */
+    document.querySelectorAll('.faq-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('svg');
+        const isHidden = content.classList.contains('hidden');
+
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-btn svg').forEach(i => i.style.transform = 'rotate(0deg)');
+        document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded', 'false'));
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          button.setAttribute('aria-expanded', 'true');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    /* ============ 4. МОДАЛЬНЫЕ ОКНА ============ */
+    const leadModal = document.getElementById('leadModal');
+    const privacyModal = document.getElementById('privacyModal');
+    const summaryText = document.getElementById('summaryText');
+    const formSource = document.getElementById('formSource');
+    const leadForm = document.getElementById('leadForm');
+    const leadSuccess = document.getElementById('leadSuccess');
+
+    function openLeadModal(sourceTitle) {
+      formSource.value = sourceTitle || 'Общая заявка';
+      const total = calculate();
+      summaryText.textContent = `${currentMaterialName}, ⌀${diameterRange.value} мм, глубина ${depthRange.value} см (${total.toLocaleString('ru-RU')} ₽)`;
+      leadForm.classList.remove('hidden');
+      leadSuccess.classList.add('hidden');
+      leadModal.classList.remove('hidden');
+    }
+
+    function closeLeadModal() {
+      leadModal.classList.add('hidden');
+    }
+
+    function openPrivacyModal() {
+      privacyModal.classList.remove('hidden');
+    }
+
+    function closePrivacyModal() {
+      privacyModal.classList.add('hidden');
+    }
+
+    const consentModal = document.getElementById('consentModal');
+    const leadConsent = document.getElementById('leadConsent');
+    function openConsentModal() { consentModal.classList.remove('hidden'); }
+    function closeConsentModal() { consentModal.classList.add('hidden'); }
+    function acceptConsentFromModal() { leadConsent.checked = true; closeConsentModal(); }
+
+    // Закрытие модалок по Esc и клику по затемнению
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      if (!consentModal.classList.contains('hidden')) return closeConsentModal();
+      if (!privacyModal.classList.contains('hidden')) return closePrivacyModal();
+      closeLeadModal();
+    });
+    [[leadModal, closeLeadModal], [privacyModal, closePrivacyModal], [consentModal, closeConsentModal]].forEach(([m, close]) => {
+      m.addEventListener('click', (e) => { if (e.target === m) close(); });
+    });
+
+    /* ============ МАСКА ТЕЛЕФОНА ============ */
+    const leadPhoneInput = document.getElementById('leadPhone');
+    function formatPhone(value) {
+      const d = value.replace(/\D/g, '');
+      if (!d) return '';
+      let national;
+      if (value.trim().startsWith('+7')) {
+        national = d.slice(1);
+        // первая цифра после «+7 (» — это 8 или 7 по привычке: не считаем её частью номера
+        if (national.length === 1 && (national === '8' || national === '7')) national = '';
+      } else {
+        national = (d[0] === '8' || d[0] === '7') ? d.slice(1) : d;
+      }
+      national = national.slice(0, 10);
+      let out = '+7 (' + national.slice(0, 3);
+      if (national.length >= 3) out += ')';
+      if (national.length > 3) out += ' ' + national.slice(3, 6);
+      if (national.length > 6) out += '-' + national.slice(6, 8);
+      if (national.length > 8) out += '-' + national.slice(8, 10);
+      return out;
+    }
+    leadPhoneInput.addEventListener('input', () => { leadPhoneInput.value = formatPhone(leadPhoneInput.value); });
+    leadPhoneInput.addEventListener('focus', () => {
+      if (!leadPhoneInput.value) leadPhoneInput.value = '+7 (';
+      // курсор в конец, иначе первая цифра встанет перед «+7»
+      setTimeout(() => { const n = leadPhoneInput.value.length; leadPhoneInput.setSelectionRange(n, n); }, 0);
+    });
+    leadPhoneInput.addEventListener('blur', () => { if (leadPhoneInput.value.replace(/\D/g, '').length <= 1) leadPhoneInput.value = ''; });
+
+    /* ============ 5. ОТПРАВКА ЗАЯВКИ В БИТРИКС24 ============ */
+    // Заявка уходит на send.php (лежит рядом с index.html), а он создаёт лид в CRM.
+    // Адрес вебхука хранится только на сервере, в браузер он не попадает.
+    const LEAD_ENDPOINT = 'send.php';
+
+    // Запоминаем UTM-метки при первом заходе, чтобы в CRM было видно источник рекламы
+    const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+    (function saveUtm() {
+      const params = new URLSearchParams(location.search);
+      UTM_KEYS.forEach(k => {
+        const v = params.get(k);
+        if (v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
+      });
+    })();
+    function getUtm() {
+      const utm = {};
+      UTM_KEYS.forEach(k => {
+        let v = new URLSearchParams(location.search).get(k);
+        if (!v) { try { v = sessionStorage.getItem(k); } catch (e) {} }
+        if (v) utm[k] = v;
+      });
+      return utm;
+    }
+
+    const leadError = document.getElementById('leadError');
+    const leadSubmit = document.getElementById('leadSubmit');
+    const leadSubmitText = document.getElementById('leadSubmitText');
+
+    function showLeadError(msg) {
+      leadError.innerHTML = msg;
+      leadError.classList.remove('hidden');
+    }
+
+    leadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      leadError.classList.add('hidden');
+
+      const name = document.getElementById('leadName').value.trim();
+      const phone = document.getElementById('leadPhone').value.trim();
+      const digits = phone.replace(/\D/g, '');
+      if (digits.length !== 11) {
+        showLeadError('Проверьте номер телефона — нужно 11 цифр, например +7 (916) 123-45-67.');
+        return;
+      }
+      if (!leadConsent.checked) {
+        showLeadError('Отметьте согласие на обработку персональных данных — без него мы не можем принять заявку.');
+        return;
+      }
+
+      const payload = {
+        name,
+        phone,
+        source: formSource.value,
+        params: summaryText.textContent,
+        material: currentMaterialName,
+        diameter: diameterRange.value,
+        depth: depthRange.value,
+        holes: holesCount,
+        total: calculate(),
+        page: location.href,
+        consent: true,
+        website: document.getElementById('leadWebsite').value, // honeypot
+        ...getUtm()
+      };
+
+      leadSubmit.disabled = true;
+      leadSubmitText.textContent = 'Отправляем…';
+
+      try {
+        const res = await fetch(LEAD_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.ok) throw new Error(data.error || 'send_failed');
+
+        reachGoal('form_submit', { source: formSource.value });
+        leadForm.reset();
+        leadForm.classList.add('hidden');
+        leadSuccess.classList.remove('hidden');
+        setTimeout(closeLeadModal, 3500);
+      } catch (err) {
+        console.error('Ошибка отправки заявки:', err);
+        showLeadError('Не удалось отправить заявку. Позвоните нам: <a href="tel:+79990000000" class="font-bold underline">+7 (999) 000-00-00</a> или напишите в <a href="https://wa.me/79990000000" target="_blank" class="font-bold underline">WhatsApp</a>.');
+      } finally {
+        leadSubmit.disabled = false;
+        leadSubmitText.textContent = 'Отправить заявку';
+      }
+    });
+
+    // Лид «клиент ушёл в мессенджер» — без имени и телефона, только контекст расчёта
+    function sendMessengerLead(source, total) {
+      const body = JSON.stringify({
+        type: 'messenger', source,
+        params: `${currentMaterialName}, ⌀${diameterRange.value} мм, глубина ${depthRange.value} см, ${holesCount} шт.`,
+        material: currentMaterialName, diameter: diameterRange.value, depth: depthRange.value,
+        holes: holesCount, total, page: location.href, ...getUtm()
+      });
+      try {
+        if (navigator.sendBeacon) navigator.sendBeacon(LEAD_ENDPOINT, new Blob([body], { type: 'application/json' }));
+        else fetch(LEAD_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body, keepalive: true });
+      } catch (e) {}
+    }
+
+    /* ============ 6. ЯНДЕКС МЕТРИКА И ЦЕЛИ ============ */
+    // Номер счётчика из Метрики (Настройки → Счётчик). Пока 0 — Метрика не подключается.
+    const METRIKA_ID = 0;
+
+    function reachGoal(goal, params) {
+      try { if (METRIKA_ID && window.ym) ym(METRIKA_ID, 'reachGoal', goal, params); } catch (e) {}
+    }
+
+    function loadMetrika() {
+      if (!METRIKA_ID || window.ym) return;
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+      ym(METRIKA_ID, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+    }
+
+    // Клики по контактам — отдельные цели (создайте их в Метрике как «JavaScript-событие»)
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a');
+      if (!a) return;
+      const href = a.getAttribute('href') || '';
+      if (href.startsWith('tel:')) reachGoal('phone_click');
+      else if (href.includes('wa.me')) reachGoal('whatsapp_click');
+      else if (href.includes('t.me')) reachGoal('telegram_click');
+    });
+    let calcTouched = false;
+    ['input', 'click'].forEach(ev => document.getElementById('calculator').addEventListener(ev, () => {
+      if (!calcTouched) { calcTouched = true; reachGoal('calc_used'); }
+    }));
+    // Открытие формы заявки — тоже цель (кнопки на сайте вызывают openLeadModal)
+    const _openLeadModal = openLeadModal;
+    window.openLeadModal = function (src) { reachGoal('form_open', { source: src }); return _openLeadModal(src); };
+
+    /* ============ 7. COOKIES ============ */
+    const cookieBanner = document.getElementById('cookieBanner');
+    function getCookieChoice() { try { return localStorage.getItem('cookie_choice'); } catch (e) { return null; } }
+    function setCookieChoice(accepted) {
+      try { localStorage.setItem('cookie_choice', accepted ? 'all' : 'necessary'); } catch (e) {}
+      cookieBanner.classList.add('hidden');
+      if (accepted) loadMetrika();
+    }
+    (function initCookies() {
+      const choice = getCookieChoice();
+      if (choice === 'all') loadMetrika();
+      else if (!choice) cookieBanner.classList.remove('hidden');
+    })();
+  </script>
+
+  <!-- ================= ВИДЖЕТ БИТРИКС24 (онлайн-чат, обратный звонок) ================= -->
+  <!--
+    Где взять ссылку: Битрикс24 → CRM → Ещё → Виджет на сайт (Контакт-центр → Виджет на сайт)
+    → откройте свой виджет → «Код для сайта». В коде будет адрес вида
+    https://cdn-ru.bitrix24.ru/b1234567/crm/site_button/loader_1_abc123.js — вставьте его ниже.
+    Пока строка пустая, виджет не загружается.
+  -->
+  <script>
+    (function (w, d, u) {
+      if (!u) return;
+      var s = d.createElement('script'); s.async = true;
+      s.src = u + '?' + (Date.now() / 60000 | 0);
+      var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+    })(window, document, '' /* ← ВСТАВЬТЕ СЮДА ССЫЛКУ loader_....js */);
+  </script>
+</body>
+</html>
