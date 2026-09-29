@@ -102,32 +102,9 @@
 }
   </script>
 
-  <!-- Tailwind CSS CDN (для продакшена соберите styles.css — см. README) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              primary: '#1D4ED8',      /* Глубокий кобальт / инженерный синий */
-              primaryHover: '#1E40AF',
-              primaryLight: '#EFF6FF',
-              dark: '#0F172A',          /* Глубокий графит для текста и контраста */
-              bgLight: '#F8FAFC',
-              card: '#FFFFFF',
-              border: '#E2E8F0',
-              borderDark: '#CBD5E1',
-              muted: '#64748B'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Arial', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Стили сайта (собранный Tailwind). После правки классов в HTML пересоберите:
+       npx tailwindcss@3 -i input.css -o styles.css --minify -->
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Шрифт Inter грузится с вашего сервера (папка fonts/), а не с Google — так IP посетителей не уходят за рубеж (152-ФЗ).
        Если файла нет, сайт покажет системный шрифт — ничего не сломается. -->
@@ -235,7 +212,7 @@
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] text-slate-900">
             Алмазное бурение <br class="hidden sm:inline">
-            <span class="text-brand-primary">отверстий&nbsp;<span class="whitespace-nowrap">⌀20–450&nbsp;мм</span></span> <br>
+            <span class="text-brand-primary">отверстий <span class="whitespace-nowrap">⌀20–450&nbsp;мм</span></span> <br>
             в бетоне и кирпиче
           </h1>
 
