@@ -126,9 +126,11 @@
     }
     .compare-container {
       position: relative;
+      container-type: inline-size;
       overflow: hidden;
       user-select: none;
     }
+    .compare-before { width: 1000px; width: 100cqw; }
     .compare-overlay {
       position: absolute;
       top: 0;
@@ -245,19 +247,13 @@
           </div>
         </div>
 
-        <!-- Правая колонка: Плейсхолдер Фото 1 -->
+        <!-- Правая колонка: Фото 1 -->
         <div class="lg:col-span-5 relative">
-          <div class="relative rounded-2xl border-2 border-dashed border-blue-200 bg-blue-50/40 aspect-[4/3] sm:aspect-auto sm:h-96 w-full flex flex-col items-center justify-center text-center p-6 select-none shadow-xs">
-            <div class="w-14 h-14 rounded-2xl bg-white border border-blue-100 flex items-center justify-center text-brand-primary mb-3 shadow-xs">
-              <i data-lucide="image" class="w-7 h-7"></i>
-            </div>
-            <span class="text-sm font-black uppercase text-slate-800 tracking-wider">Фото 1</span>
-            <span class="text-xs font-semibold text-brand-primary mt-1">Процесс чистового алмазного бурения</span>
-            <span class="text-[11px] text-slate-500 mt-2 px-3 py-1 bg-white rounded-md border border-slate-200">Место под фото мастера со станиной Hilti</span>
+          <div class="relative rounded-2xl overflow-hidden border border-blue-100 bg-blue-50/40 aspect-[4/3] sm:aspect-auto sm:h-96 w-full shadow-xs">
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-1.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-1.webp" width="1200" height="900" alt="Иллюстрация: установка алмазного бурения, коронка входит в бетонную стену, рядом лежит керн" class="w-full h-full object-cover" loading="eager" decoding="async">
           </div>
         </div>
-
-      </div>
     </div>
   </section>
 
@@ -325,12 +321,9 @@
       <div class="relative rounded-2xl overflow-hidden border-2 border-slate-300 shadow-sm compare-container h-80 sm:h-[400px] bg-white" id="compareBox">
         
         <!-- Правая сторона (ПОСЛЕ) -->
-        <div class="absolute inset-0 bg-blue-50/40 flex flex-col items-center justify-center text-center p-6 select-none border-2 border-dashed border-blue-200">
-          <div class="w-12 h-12 rounded-xl bg-white border border-blue-200 flex items-center justify-center text-brand-primary mb-2">
-            <i data-lucide="check-circle" class="w-6 h-6"></i>
-          </div>
-          <span class="text-sm font-black text-slate-900 uppercase tracking-wider">Фото 3: После бурения</span>
-          <span class="text-xs text-slate-600 mt-1">Идеально чистое ровное отверстие без пыли и подтёков</span>
+        <div class="absolute inset-0 bg-slate-100">
+          <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-3.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+          <img src="images/photo-3.webp" width="1600" height="800" alt="Иллюстрация: ровное отверстие в стене после бурения, защитная плёнка на полу" draggable="false" class="w-full h-full object-cover select-none pointer-events-none" loading="lazy" decoding="async">
         </div>
 
         <div class="absolute top-4 right-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-900 uppercase shadow-xs z-30">
@@ -339,12 +332,9 @@
 
         <!-- Левая сторона (ДО) -->
         <div class="compare-overlay z-20" id="compareOverlay">
-          <div class="absolute inset-0 w-[1000px] bg-slate-100 flex flex-col items-center justify-center text-center p-6 select-none border-r-2 border-brand-primary">
-            <div class="w-12 h-12 rounded-xl bg-white border border-slate-300 flex items-center justify-center text-slate-600 mb-2">
-              <i data-lucide="pencil-ruler" class="w-6 h-6"></i>
-            </div>
-            <span class="text-sm font-black text-slate-900 uppercase tracking-wider">Фото 2: До бурения</span>
-            <span class="text-xs text-slate-600 mt-1">Точная разметка и монтаж защитного оборудования</span>
+          <div class="compare-before absolute inset-y-0 left-0 bg-slate-100">
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-2.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-2.webp" width="1600" height="800" alt="Иллюстрация: разметка отверстия на стене и защитная плёнка перед бурением" draggable="false" class="w-full h-full object-cover select-none pointer-events-none" loading="lazy" decoding="async">
           </div>
           <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-900 uppercase shadow-xs z-30">
             До: Стена до работ
@@ -557,10 +547,8 @@
         
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 4</span>
-              <span class="text-[11px] text-slate-500 mt-1">Отверстие под бризер/КИВ</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-4.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-4.webp" width="800" height="400" alt="Иллюстрация: гильза и приточный клапан в отверстии наружной стены" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="wind" class="text-brand-primary w-4 h-4"></i> Вентиляция и КИВ-клапаны
             </h3>
@@ -575,10 +563,8 @@
 
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 5</span>
-              <span class="text-[11px] text-slate-500 mt-1">Проходка плит перекрытия</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-5.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-5.webp" width="800" height="400" alt="Иллюстрация: труба проходит через отверстие в плите перекрытия" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="droplet" class="text-brand-primary w-4 h-4"></i> Отопление и канализация
             </h3>
@@ -593,10 +579,8 @@
 
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 6</span>
-              <span class="text-[11px] text-slate-500 mt-1">Пакет гильз под кабель</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-6.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-6.webp" width="800" height="400" alt="Иллюстрация: ряд отверстий с гильзами, через которые проложены кабели" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="zap" class="text-brand-primary w-4 h-4"></i> Электрика и слаботочка
             </h3>
@@ -611,10 +595,8 @@
 
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 7</span>
-              <span class="text-[11px] text-slate-500 mt-1">Продух в монолитном цоколе</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-7.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-7.webp" width="800" height="400" alt="Иллюстрация: продух с решёткой в цоколе из блоков ФБС" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="box" class="text-brand-primary w-4 h-4"></i> Продухи в цоколе и ФБС
             </h3>
@@ -629,10 +611,8 @@
 
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 8</span>
-              <span class="text-[11px] text-slate-500 mt-1">Бурение под углом под дымоход</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-8.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-8.webp" width="800" height="400" alt="Иллюстрация: коаксиальный дымоход котла проходит через стену под наклоном" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="flame" class="text-brand-primary w-4 h-4"></i> Дымоходы и газовые котлы
             </h3>
@@ -647,10 +627,8 @@
 
         <div class="bg-white border border-slate-200 rounded-xl p-5 hover:border-brand-primary transition-all flex flex-col justify-between shadow-xs group">
           <div>
-            <div class="w-full h-40 bg-slate-50 rounded-lg mb-4 border-2 border-dashed border-slate-200 flex flex-col items-center justify-center text-center p-3">
-              <span class="text-xs font-black uppercase text-slate-800">Фото 9</span>
-              <span class="text-[11px] text-slate-500 mt-1">Строчечное бурение проема</span>
-            </div>
+            <!-- Иллюстрация. Чтобы поставить реальное фото, замените файл images/photo-9.webp (WebP, ширина до 1600 px), имя оставьте тем же и поправьте alt -->
+            <img src="images/photo-9.webp" width="800" height="400" alt="Иллюстрация: проём, вырезанный цепочкой смежных отверстий" class="w-full h-40 object-cover rounded-lg mb-4 bg-slate-50 border border-slate-200" loading="lazy" decoding="async">
             <h3 class="text-lg font-bold mb-1.5 flex items-center gap-2 text-slate-900">
               <i data-lucide="scan-line" class="text-brand-primary w-4 h-4"></i> Проемы строчечным бурением
             </h3>
