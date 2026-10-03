@@ -14,7 +14,8 @@
   <meta property="og:site_name" content="АлмазПрофиБур">
   <link rel="canonical" href="https://almazprofibur.ru/">
 
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="logo-icon.png">
+  <link rel="apple-touch-icon" href="logo-icon.png">
 
   <!-- Структурированные данные для Яндекса и Google (телефон — замените вместе с остальными) -->
   <script type="application/ld+json">
@@ -981,10 +982,9 @@
           <div class="flex items-center gap-3 md:gap-4">
             <div class="w-11 h-11 md:w-12 md:h-12 flex items-center justify-center overflow-hidden shrink-0">
               <img 
-                src="logo.png" 
-                alt="АлмазПрофиБур" 
-                class="w-full h-full object-contain object-left"
-                style="max-width: 140%;"
+                src="logo-icon.png"
+                alt=""
+                class="w-full h-full object-contain"
                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-brand-primary flex items-center justify-center font-black text-xs\'>АПБ</div>';"
               >
             </div>
@@ -1002,6 +1002,8 @@
         <div class="md:col-span-4 text-xs text-brand-muted space-y-1">
           <div class="font-bold text-slate-800 mb-2 uppercase tracking-wider">Юридическая информация</div>
           <p>ИП Ханас Василий Степанович («АлмазПрофиБур»)</p>
+          <!-- ЗАГЛУШКА: впишите ОГРНИП (15 цифр) вместо прочерков -->
+          <p>ОГРНИП: _______________</p>
           <p>ИНН: 772587269400 / Работаем по договору</p>
           <p>Оплата: Наличные, картой, безналичный расчет с НДС и без НДС по ЭДО</p>
           <p class="pt-2">
@@ -1111,6 +1113,7 @@
 
   <!-- ================= МОДАЛЬНОЕ ОКНО: СОГЛАСИЕ НА ОБРАБОТКУ ПДн ================= -->
   <!-- Текст — типовой. Замените реквизиты оператора на свои и при возможности покажите юристу. -->
+  <!-- ЗАГЛУШКИ: в тексте согласия впишите адрес оператора вместо «___» и e-mail вместо «___@almazprofibur.ru» -->
   <div id="consentModal" class="fixed inset-0 z-[60] flex items-center justify-center bg-slate-900/60 backdrop-blur-xs hidden p-4" role="dialog" aria-modal="true" aria-labelledby="consentTitle">
     <div class="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl border border-slate-200 max-h-[85vh] flex flex-col">
       <button onclick="closeConsentModal()" aria-label="Закрыть" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100">
